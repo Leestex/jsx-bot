@@ -1,0 +1,8 @@
+{
+  "name": "jsx-bot",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Leestex/jsx-bot.git",
+  "author": "Nazar Kuzmenko <nazar.kuzmenko@gmail.com>",
+  "license": "MIT"
+}
