@@ -10,7 +10,6 @@ const message = (
     <QuickReply>Show menu</QuickReply>
     <QuickReply>Change language</QuickReply>
     <QuickReply>Authorize</QuickReply>
-    <MetaData>{meta.welcome}</MetaData>
   </Message>
 )
 ```
@@ -44,7 +43,6 @@ const message = {
         title: 'Authorize'
       }
     ],
-    metadata: meta.welcome
   },
   notification_type: 'SILENT_PUSH'
 }
