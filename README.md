@@ -1,16 +1,16 @@
-# Usage
+# Concept
 
 ### Input
 
 ```jsx
 const message = (
   <Message recipient="1905720572" notification="SILENT_PUSH">
-    <Message.Text>Hello, {user.firstName}!</Message.Text>
-    <Message.Attachment payload={images.welcome} type="image" />
-    <Message.QuickReply payload={commands.start}>Show menu</Message.QuickReply>
-    <Message.QuickReply payload={commands.language}>Change language</Message.QuickReply>
-    <Message.QuickReply payload={commands.auth}>Authorize</Message.QuickReply>
-    <Message.Metadata>{meta.welcome}</Message.Metadata>
+    <Text>Hello, {user.firstName}!</Text>
+    <Attachment payload={images.welcome} type="image" />
+    <QuickReply payload={commands.start}>Show menu</QuickReply>
+    <QuickReply payload={commands.language}>Change language</QuickReply>
+    <QuickReply payload={commands.auth}>Authorize</QuickReply>
+    <MetaData>{meta.welcome}</MetaData>
   </Message>
 )
 ```
