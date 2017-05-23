@@ -6,7 +6,7 @@
 const message = (
   <Message recipient="1905720572" notification="SILENT_PUSH">
     <Text>Hello, {user.firstName}!</Text>
-    <Attachment payload={images.welcome} type="image" />
+    <Attachment>{images.welcome}</Attachment>
     <QuickReply>Show menu</QuickReply>
     <QuickReply>Change language</QuickReply>
     <QuickReply>Authorize</QuickReply>
