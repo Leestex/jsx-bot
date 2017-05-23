@@ -7,9 +7,9 @@ const message = (
   <Message recipient="1905720572" notification="SILENT_PUSH">
     <Text>Hello, {user.firstName}!</Text>
     <Attachment payload={images.welcome} type="image" />
-    <QuickReply payload={commands.start}>Show menu</QuickReply>
-    <QuickReply payload={commands.language}>Change language</QuickReply>
-    <QuickReply payload={commands.auth}>Authorize</QuickReply>
+    <QuickReply>Show menu</QuickReply>
+    <QuickReply>Change language</QuickReply>
+    <QuickReply>Authorize</QuickReply>
     <MetaData>{meta.welcome}</MetaData>
   </Message>
 )
@@ -33,18 +33,15 @@ const message = {
     quick_replies: [
       {
         content_type: 'text',
-        title: 'Show menu',
-        payload: commands.start
+        title: 'Show menu'
       },
       {
         content_type: 'text',
-        title: 'Change language',
-        payload: commands.language
+        title: 'Change language'
       },
       {
         content_type: 'text',
-        title: 'Authorize',
-        payload: commands.auth
+        title: 'Authorize'
       }
     ],
     metadata: meta.welcome
