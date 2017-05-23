@@ -53,10 +53,10 @@ const message = {
 ### Facebook Messenger
 
 ```jsx
-/** @jsx jsx-object */
+/** @jsx JSXBot */
 
 import request from 'request'
-import { Message } from 'jsx-bot/facebook'
+import JSXBot, { Message } from 'jsx-bot/facebook'
 
 const user = {
   id: '1905720572',
