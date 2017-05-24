@@ -2,7 +2,18 @@
   "name": "jsx-bot",
   "version": "0.0.1",
   "main": "index.js",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "repository": "https://github.com/Leestex/jsx-bot.git",
   "author": "Nazar Kuzmenko <nazar.kuzmenko@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
 }
