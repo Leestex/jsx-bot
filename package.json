@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "babel src -d dist -s",
-    "clean": "rm -rf dist/"
+    "clean": "rm -rf dist/",
+    "release": "standard-version"
   },
   "repository": "https://github.com/Leestex/jsx-bot.git",
   "author": "Nazar Kuzmenko <nazar.kuzmenko@gmail.com>",
@@ -21,7 +22,8 @@
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "standard-version": "^4.0.0"
   },
   "dependencies": {
     "object-assign-deep": "^0.3.1"
