@@ -56,7 +56,8 @@ const message = {
 /** @jsx JSXBot */
 
 import request from 'request'
-import JSXBot, { Message } from 'jsx-bot/facebook'
+import JSXBot from 'jsx-bot'
+import { Message } from 'jsx-bot/facebook'
 
 const user = {
   id: '1905720572',
