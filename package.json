@@ -7,10 +7,17 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "scripts": {
+    "build": "babel src -d dist -s",
+    "clean": "rm -rf dist/",
+  },
   "repository": "https://github.com/Leestex/jsx-bot.git",
   "author": "Nazar Kuzmenko <nazar.kuzmenko@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
