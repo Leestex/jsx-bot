@@ -1,7 +1,7 @@
 {
   "name": "jsx-bot",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.1.0",
+  "main": "dist/index.js",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
