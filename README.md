@@ -1,5 +1,7 @@
 # Concept
 
+[![Join the chat at https://gitter.im/jsx-bot/Lobby](https://badges.gitter.im/jsx-bot/Lobby.svg)](https://gitter.im/jsx-bot/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### Input
 
 ```jsx
