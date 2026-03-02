@@ -89,3 +89,32 @@ request.post('https://graph.facebook.com/v2.6/me/messages', {
   json: message
 })
 ```
+
+### Slack
+
+```jsx
+/** @jsx JSXBot */
+
+import { WebClient } from '@slack/web-api'
+import JSXBot from 'jsx-bot'
+import { SlackMessage } from 'jsx-bot/slack'
+
+const slack = new WebClient(process.env.SLACK_TOKEN)
+
+const message = (
+  <SlackMessage channel="#general" text="New order received">
+    <SlackMessage.Header>Order #1234</SlackMessage.Header>
+    <SlackMessage.Section>
+      *Customer:* John Doe{'\n'}
+      *Total:* $49.99
+    </SlackMessage.Section>
+    <SlackMessage.Divider />
+    <SlackMessage.Actions>
+      <SlackMessage.Button actionId="approve" style="primary">Approve</SlackMessage.Button>
+      <SlackMessage.Button actionId="reject" style="danger">Reject</SlackMessage.Button>
+    </SlackMessage.Actions>
+  </SlackMessage>
+)
+
+slack.chat.postMessage(message)
+```
